@@ -24,7 +24,7 @@ public class ProductoRestController {
 		return productoService.findAll();
 	}
 	
-	@PostMapping("/buscar ")
+	@PostMapping("/buscar")
 	public Producto buscar(@RequestParam("id") Long id) {
 		return productoService.findById(id);
 	}
